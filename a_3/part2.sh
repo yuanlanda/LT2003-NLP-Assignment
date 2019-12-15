@@ -8,7 +8,7 @@ do
   do
     if [[ $word_found = false ]]
     then
-      line=$(awk -v i=$i '(NR == i){print}' $article | tr -d '[:punct:]')
+      line=$(awk -v i=$i '(NR == i){print}' $article)
       word_count=$(echo $line | wc -w)
       word_arr=($(echo $line | tr ' ' ' '))
       for (( j=$[$1-1]; j<=word_count; j++ ))
