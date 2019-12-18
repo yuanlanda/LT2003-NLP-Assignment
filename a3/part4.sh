@@ -5,8 +5,6 @@ keywords_arr=($(echo $keywords | tr ' ' ' '))
 
 files=*.txt
 index=$[$1-1]
-echo $keywords
-echo ${keywords_arr[@]}
 
 for article in $files
 do
