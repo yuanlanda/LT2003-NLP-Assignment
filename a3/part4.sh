@@ -23,7 +23,6 @@ do
           echo $article
           if [[ ! -d $3 ]]
           then
-            echo 'not exist'
             mkdir $3
           fi
           cp $article $3/$article
