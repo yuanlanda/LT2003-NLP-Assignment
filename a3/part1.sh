@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# awk '{print FILENAME $0}'
 for article in $2
 do
   line_count=$(wc -l $article | sed 's/[:space:].*$//g')
